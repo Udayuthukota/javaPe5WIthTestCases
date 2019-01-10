@@ -2,38 +2,33 @@ import java.util.ArrayList;
 
 public class UpdateList {
 
-    public void upDateList(String[] input,String[] override,int[]index)
+    public ArrayList<String> upDateList(String[] input,String[] override,int[]index)
     {
-        ArrayList<String> list=new ArrayList<String>();
-/*
-        for(int j=0;j<input.length;j++)
+
+        if (input==null)
         {
-         list.add(input[j]);
-        }
-        */
+            return null;
+        }else {
+            ArrayList<String> list = new ArrayList<String>();
+            int indexNumber = 0;
+            int indexValue = index[indexNumber];
+            int NumberArrayLenght = index.length;
+            // System.out.println(k);
+            for (int i = 0; i < input.length; i++) {
+                if (i == indexValue) {
+                    list.add(override[indexNumber]);
+                    if (indexNumber < NumberArrayLenght - 1) {
+                        indexNumber++;
+                    }
+                    indexValue = index[indexNumber];
+                } else {
+                    list.add(input[i]);
+                }
 
-
-        int l=0;
-        int k=index[l];
-        int j=index.length;
-       // System.out.println(k);
-
-        for(int i=0;i<input.length;i++)
-        {
-         if(i==k)
-         {
-             list.add(override[l]);
-             if(l<j-1) {
-             l++;  }
-             k=index[l];
-         }
-         else
-            {
-                list.add(input[i]);
             }
-
+            System.out.println(list);
+            return list;
         }
-        System.out.println(list);
 
     }
     public  static void main(String[] args)
