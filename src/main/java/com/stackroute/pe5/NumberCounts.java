@@ -21,15 +21,15 @@ public class NumberCounts
                 String result1 = result.replaceAll("[_ ]+", " "); //using regular expestion remove underscore
                 String arrayInput[] = result1.split(" ");
                 Map<String, Integer> words = new HashMap<>();
-               for (String str : arrayInput)
+               for (String arrayElement : arrayInput)
                  {
-                    if (words.containsKey(str))
+                    if (words.containsKey(arrayElement))
                     {
-                       words.put(str, 1 + words.get(str));
+                       words.put(arrayElement, 1 + words.get(arrayElement));
                     }
                     else
                         {
-                          words.put(str, 1);
+                          words.put(arrayElement, 1);
                         }
                   }
               return words;

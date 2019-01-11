@@ -18,7 +18,7 @@ public class UpdateList
                   int indexNumber = 0;
                   int indexValue = index[indexNumber];
                   int NumberArrayLenght = index.length;
-                 for (int i = 0; i < input.length; i++)   //here we replace strings at the given index
+                 for (int i = 0; i < input.length; i++)   //here we replace strings  vales at the given index
                  {
                      if (i == indexValue)
                      {
@@ -35,8 +35,8 @@ public class UpdateList
                          }
 
                  }
-            return list;
-        }
+               return list;
+            }
 
     }
 

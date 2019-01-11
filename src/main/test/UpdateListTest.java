@@ -1,7 +1,3 @@
-/*Write a Java program to update specific array element by given
-element and empty the  array listInput: [Apple, Grape, Melon, Berry]Output: [Kiwi, Grape, Mango, Berry]
- */
-//Test Code begins here.
 import com.stackroute.pe5.UpdateList;
 import org.junit.After;
 import org.junit.Before;

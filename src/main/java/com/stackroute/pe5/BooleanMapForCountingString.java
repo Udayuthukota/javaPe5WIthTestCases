@@ -20,12 +20,12 @@ public class BooleanMapForCountingString
            else
               {
                   Map<String, Boolean> words = new HashMap<>();
-                  for (String str : inputString) {
-                if (words.containsKey(str)) //using word(map) as a container and checking if a letter is already existing
+                  for (String inputElement : inputString) {
+                if (words.containsKey(inputElement)) //using word(map) as a container and checking if a letter is already existing
                 {
-                    words.put(str, true);
+                    words.put(inputElement, true);
                 } else {
-                    words.put(str, false);
+                    words.put(inputElement, false);
                 }
               }
             return words;

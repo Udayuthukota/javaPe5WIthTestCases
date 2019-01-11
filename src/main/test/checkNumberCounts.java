@@ -1,8 +1,3 @@
-/*Write a program to find the number of counts in the following  String .
-Store the output inMap< String ,Integer> as key value pair.
-Input :   String  str = “one one -one___two,,three,one @three*one?two”;
-  Output : {"one":5 , "two":2, "three" :2}
-*/
 import com.stackroute.pe5.NumberCounts;
 import org.junit.Test;
 import java.util.HashMap;

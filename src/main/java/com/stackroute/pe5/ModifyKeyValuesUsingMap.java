@@ -22,11 +22,11 @@ public class ModifyKeyValuesUsingMap
             }
             else
                 {
-                    Iterator itr = inputmap.entrySet().iterator(); //entry set is used to convert hashmap to store in list
-                    Map.Entry mapElement = (Map.Entry) itr.next();
+                    Iterator traverseInput = inputmap.entrySet().iterator(); //entry set is used to convert hashmap to store in list
+                    Map.Entry mapElement = (Map.Entry) traverseInput.next();
                     String key1 = (String) mapElement.getKey();
                     String value1 = (String) mapElement.getValue();
-                    mapElement = (Map.Entry) itr.next();
+                    mapElement = (Map.Entry) traverseInput.next();
                     String key2 = (String) mapElement.getKey();
                     String value2 = (String) mapElement.getValue();
                     if (value1!= null)
