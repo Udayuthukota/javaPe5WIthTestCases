@@ -4,6 +4,7 @@ arrayInput : String  arr[] = {“a”,”b”,”c”,”d”,”a”,”c”,�
 Output - {“a” : true,”b” :false ,”c” :true,”d” : false}
  */
 //Implementation begings here
+
 package com.stackroute.pe5;
 import java.util.Map;
 import java.util.*;

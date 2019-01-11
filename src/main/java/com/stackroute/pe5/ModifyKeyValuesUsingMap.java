@@ -6,6 +6,7 @@ Example 1:The map {"val1": "java", "val2": "c++"} should return {"val1": " ", "v
 Example 2:The map {"val1": "mars", "val2": "saturn"}  should return {"val1": " ", "val2":"mars"
  */
 //implementation begins here
+
 package com.stackroute.pe5;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
