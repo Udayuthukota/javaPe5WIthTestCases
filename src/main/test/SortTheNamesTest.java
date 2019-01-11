@@ -1,3 +1,4 @@
+import com.stackroute.pe5.SortTheNames;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +30,6 @@ public class SortTheNamesTest {
            ArrayList<String> actualValue=new ArrayList<>();
             ArrayList<String> expectedValue=new ArrayList<>();
             expectedValue.add("Alice");
-            expectedValue.add("Bluto");
             expectedValue.add("Bluto");
             expectedValue.add("Harry");
             expectedValue.add("Olive");

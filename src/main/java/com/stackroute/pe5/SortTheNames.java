@@ -1,3 +1,4 @@
+package com.stackroute.pe5;
 import java.util.*;
 
 public class SortTheNames {
@@ -17,17 +18,17 @@ public class SortTheNames {
 
     public static void main(String[] args){
 
-        Set<String> str=new HashSet<String>();
-        str.add("Harry");
-        str.add("Olive");
-        str.add("Alice");
-        str.add("Bluto");
-        str.add("Eugene");
+        Set<String> input=new HashSet<String>();
+        input.add("Harry");
+        input.add("Olive");
+        input.add("Alice");
+        input.add("Bluto");
+        input.add("Eugene");
 
         SortTheNames obj= new SortTheNames();
 
-        System.out.println(str);
-        System.out.println(obj.sortArray((HashSet<String>) str));
+        System.out.println(input);
+        System.out.println(obj.sortArray((HashSet<String>) input));
     }
 
 
