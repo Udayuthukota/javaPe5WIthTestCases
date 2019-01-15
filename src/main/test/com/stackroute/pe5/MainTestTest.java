@@ -7,34 +7,34 @@ import java.util.List;
 import static org.junit.Assert.*;
 public class MainTestTest
 {
-    MainTest obj;
+    MainTest mainTest;
     @Before
     public void setUp() throws Exception
     {
-        obj = new MainTest();
+        mainTest = new MainTest();
     }
 
     @After
     public void tearDown() throws Exception
     {
-        obj = null;
+        mainTest = null;
     }
     //pass case for sample input
     @Test
     public void studentInfo()
     {
-        Student obj1 = new Student(1, "Saurabh", 22);
-        Student obj2 = new Student(2, "Bhanu", 20);
-        Student obj3 = new Student(3, "Sam", 24);
-        Student obj4 = new Student(4, "Evangeline", 10);
-        Student obj5 = new Student(5, "Jaanu", 22);
+        Student student1 = new Student(1, "uday", 22);
+        Student student2 = new Student(2, "Bhanu", 20);
+        Student student3 = new Student(3, "Sam", 24);
+        Student student4 = new Student(4, "Evangeline", 10);
+        Student student5 = new Student(5, "Jane", 22);
         List<Student> list=new ArrayList<Student>();
-        list.add(obj1);
-        list.add(obj2);
-        list.add(obj3);
-        list.add(obj4);
-        list.add(obj5);
-        List<Student> ans=obj.studentInfo();
+        list.add(student1);
+        list.add(student2);
+        list.add(student3);
+        list.add(student4);
+        list.add(student5);
+        List<Student> ans=mainTest.studentInfo();
         String expected="",actual="";
         for(int i=0;i<list.size();i++)
         {

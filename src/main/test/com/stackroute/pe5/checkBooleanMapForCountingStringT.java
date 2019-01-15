@@ -1,14 +1,12 @@
-import com.stackroute.pe5.BooleanMapForCountingString;
+package com.stackroute.pe5;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 import static org.junit.Assert.*;
-
-public class BoolieanMapForCountingStringTest
+public class checkBooleanMapForCountingStringT
 {
-
         BooleanMapForCountingString boolieanMapForCountingString;
         @Before
         public void setUp() throws Exception
@@ -19,10 +17,10 @@ public class BoolieanMapForCountingStringTest
         @After
         public void tearDown() throws Exception
         {
-        boolieanMapForCountingString=null;
+            boolieanMapForCountingString=null;
         }
 
-            //pass case or sample input 1
+        //pass case or sample input 1
         @Test
         public void testBoolieanMapForCountingStringSuccess()
         {
@@ -69,7 +67,7 @@ public class BoolieanMapForCountingStringTest
             assertNotEquals(expectedValue,actualValue);
         }
 
-    //fail case or sample input 2
+        //fail case or sample input 2
         @Test
         public void testBoolieanMapForCountingStringFailureTwo()
         {
@@ -95,7 +93,4 @@ public class BoolieanMapForCountingStringTest
             actualValue=boolieanMapForCountingString.numberCount(null);
             assertEquals(expectedValue,actualValue);
         }
-
-
-
 }
